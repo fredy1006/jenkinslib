@@ -4,3 +4,15 @@ package org.devops
 def PrintMes(content){
     println(content)
 }
+
+//颜色输出
+def PrintMes(value,colour){
+    colours = [
+        'red'    : "\033[30m >>>>>>>>>>>>>>>${value}<<<<<<<<<<<<<<< \033[0m",
+        'yellow' : "\033[33m >>>>>>>>>>>>>>>${value}<<<<<<<<<<<<<<< \033]0m",
+        'green'  : "\033[32n >>>>>>>>>>>>>>>${value}<<<<<<<<<<<<<<< \033]0m"        
+    ]
+    ansiColor('xterm') {
+        println{colours[colcour]}
+    }
+}
