@@ -1,9 +1,9 @@
 package org.devops
 
 //打印内容
-def PrintMes(content){
-    println(content)
-}
+//def PrintMes(content){
+//    println(content)
+//}
 
 //颜色输出
 def PrintMes(value,colour){
