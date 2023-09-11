@@ -2,6 +2,10 @@
 def tools = new org.devops.tools()
 def build = new org.devops.build()
 
+String buildType = "${env.buildType}"
+String buildSHell = "${env.buildShell}"
+
+
 pipeline {
         agent { node { label "agent01"  //指定运行节点的标签或者名称
                 }
