@@ -62,7 +62,7 @@ pipeline {
                         }
                 }
 
-                //发布
+                //应用发布
                 stage("deploy"){
                         steps{
                                 script{
