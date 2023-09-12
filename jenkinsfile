@@ -66,7 +66,9 @@ pipeline {
                 stage("deploy"){
                         steps{
                                 script{
+                                        println("应用发布")
                                         deploy.AnsibleDeploy("${deployhosts}","-m ping")
+                                        tools.PrintMes("应用发布",'green')
                                 }
                         }
                 }
